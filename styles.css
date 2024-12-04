@@ -1,0 +1,96 @@
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #f0f8ff);
+    color: #333;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0033cc; /* Azul */
+    color: white;
+}
+.nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav a:hover {
+    color: #ff4500; /* Naranja */
+}
+
+/* Split Screen Styles */
+.split-screen {
+    display: flex;
+}
+.split {
+    flex: 1;
+    padding: 50px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.split.left {
+    background-color: #0055ff; /* Azul más intenso */
+}
+.split.right {
+    background-color: #4caf50; /* Verde */
+}
+
+/* Parallax Section */
+.parallax {
+    background-image: url('parallax-bg.jpg'); /* Imagen a sustituir */
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.parallax .content {
+    text-align: center;
+}
+
+/* Scrolling Horizontal Section */
+.scroll-horizontal {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
+    background: #e0f7fa; /* Celeste */
+}
+.product-scroll .product-card {
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    background: #ffeb3b; /* Amarillo/Naranja brillante */
+    line-height: 150px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.product-card:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0033cc; /* Azul */
+    color: white;
+}
