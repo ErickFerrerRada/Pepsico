@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PepsiCo - Interfaz Avanzada</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles_advanced.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="script_advanced.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3 sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PepsiCo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#multimedia">Multimedia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center text-light d-flex align-items-center" style="background-image: url('IMG/Comidita.png');">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Explora el Mundo de PepsiCo</h1>
+            <p class="lead">Innovación, sabor y sostenibilidad en cada paso.</p>
+            <a href="#productos" class="btn btn-light btn-lg mt-4">Descubre más</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="productos" class="products py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Nuestros Productos</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <img src="IMG/pepsi.png" class="card-img-top" alt="Pepsi">
+                        <div class="card-body">
+                            <h5 class="card-title">Pepsi</h5>
+                            <p class="card-text">El refresco que refresca.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <img src="IMG/lays.png" class="card-img-top" alt="Lay's">
+                        <div class="card-body">
+                            <h5 class="card-title">Lay's</h5>
+                            <p class="card-text">Sabores que conquistan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <img src="IMG/quaker.png" class="card-img-top" alt="Quaker">
+                        <div class="card-body">
+                            <h5 class="card-title">Quaker</h5>
+                            <p class="card-text">Energía para tu día.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <img src="IMG/gatorade.png" class="card-img-top" alt="Gatorade">
+                        <div class="card-body">
+                            <h5 class="card-title">Gatorade</h5>
+                            <p class="card-text">Hidratación para atletas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Multimedia Section -->
+    <section id="multimedia" class="multimedia py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Explora Nuestra Historia</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="IMG/slide1.jpg" class="d-block w-100" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="IMG/slide2.png" class="d-block w-100" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="IMG/slide3.jpg" class="d-block w-100" alt="Slide 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact bg-primary text-light py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Contáctanos</h2>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Nombre" required>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" class="form-control" placeholder="Correo Electrónico" required>
+                </div>
+                <div class="col-12">
+                    <textarea class="form-control" rows="5" placeholder="Mensaje" required></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-light">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-3 bg-dark text-center text-light">
+        <p>© 2024 PepsiCo. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
